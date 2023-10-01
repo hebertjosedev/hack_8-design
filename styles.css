@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'Arimo bold';
+    src: url('fonts/Arimo/Arimo-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Arimo-regular';
+    src: url('fonts/Arimo/static/Arimo-Regular.ttf');
+}
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px 0 80px;
+    align-items: center;
+    height: 20vh;
+}
+
+header .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 215px;
+    font-family: 'Arimo-regular';
+}
+
+header .circulo{
+    width: 37px;
+    height: 37px;
+    background-color: #7ED957;
+    border-radius: 25px;
+}
+
+header span{
+    font-family: 'Arimo bold';
+    font-weight: 500;
+}
+
+main{
+    width: 100%;
+}
+
+main .contenedor-banner{
+    position: relative;
+    font-family: 'Arimo bold';
+    width: 100%;
+    height: 80vh;
+    background-image: url('img/foto-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -1;
+}
+
+.contenedor-info1{
+    margin-bottom: 25px;
+}
+
+.contenedor-banner .contenedor-info1 span{
+    background-color: #00BF63;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.contenedor-banner .contenedor-info1 .span1{
+    width: 246px;
+    margin-left: 66px;
+    margin-bottom: 5px;
+    background-color: #00BF63;
+}
+
+.contenedor-info1 .span1 span{
+    margin-left: 38px;
+}
+
+.contenedor-banner .contenedor-info1 .span2,
+.contenedor-banner .contenedor-info1 .span3{
+    width: 440px;
+    margin-left: 80px;
+    margin-bottom: 5px;
+    background-color: #00BF63;
+}
+
+.contenedor-info1  .span2 span,
+.contenedor-info1  .span3 span{
+    margin-left: 20px;
+}
+
+.contenedor-banner .contenedor-info2 .span4,
+.contenedor-banner .contenedor-info2 .span5{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.contenedor-info2 .span4{
+    width: 408px;
+    margin-left: 80px;
+    margin-bottom: 5px;
+}
+
+.contenedor-info2 .span4 span{
+    margin-left: 21px;
+}
+
+.contenedor-info2 .span5{
+    width: 318px;
+    margin-left: 80px;
+}
+
+.contenedor-info2 .span5 span{
+    margin-left: 20px;
+}
+
+.contenedor-portafolio{
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    margin: 20px 0 20px 0;
+}
+
+
+.contenedor-portafolio .contenedor-portafolio-titulo,
+.contenedor-portafolio-cards{
+    font-family: 'Arimo bold';
+    margin-left: 80px;
+}
+
+.contenedor-portafolio .contenedor-portafolio-titulo h3{
+    font-size: 32px;
+}
+
+.contenedor-portafolio-cards{
+    display: flex;
+    padding: 0;
+}
+
+.contenedor-portafolio-cards section{
+    width: 600px;
+}
+
+.contenedor-portafolio-cards img{
+    width: 400px;
+    height: 300px;
+}
+
+.contenedor-portafolio-cards .section-publicacion img{
+    margin-top: 14px;
+    height: 271px;
+    width: 422px;
+    margin-bottom: 31px;
+}
+
+.info-imagen-publicacion{
+    margin-left: 28px;
+}
+
+.contenedor-portafolio-cards .section-desarrollo img{
+    margin-bottom: 10px;
+}
+
+.contenedor-portafolio-cards .section-diseño img{
+    height: 325px;
+    margin-top: -12px;
+}
+
+.contenedor-footer{
+    margin: 20px 0 20px 0;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    font-family: 'Arimo bold';
+    font-size: 22px;
+    background-color: #00BF63;
+    color:#EEEEEE;
+    margin: 0 auto;
+}
+
+footer a{
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+@media (max-width: 1200px) { 
+    main .contenedor-banner{
+        background-size:auto;
+    }
+ }
